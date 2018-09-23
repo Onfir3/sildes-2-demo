@@ -29,12 +29,11 @@ function 初始化(){
     .siblings().addClass('enter')
 }
 function makeCurrent($node){
-    $node.removeClass('enter leave').addClass('current')
+    return $node.removeClass('enter leave').addClass('current')
 }
 function makeLeave($node){
-    $node.removeClass('current enter').addClass('leave')
-    return $node
+    return $node.removeClass('current enter').addClass('leave')
 }
 function makeEnter($node){
-    $node.removeClass('leave current').addClass('enter')
+    return $node.removeClass('leave current').addClass('enter')
 }
