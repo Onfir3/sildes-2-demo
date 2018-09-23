@@ -9,6 +9,7 @@ setInterval(() =>{
     n += 1
 },3000)
 
+//以下是封装好的代码
 function getImage(n){
     return $(`.images > img:nth-child(${x(n)})`)
 }
